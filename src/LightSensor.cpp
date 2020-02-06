@@ -1,5 +1,6 @@
 #include <LightSensors.h>
 
+
 LightSensor::LightSensor(short pin) {
   sensorPin = pin;
 }
