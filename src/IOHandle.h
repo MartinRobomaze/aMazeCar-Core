@@ -1,4 +1,3 @@
-#include "MazeCar.h"
 #include <Arduino.h>
 #include <avr/io.h>
 
@@ -236,7 +235,7 @@ int AnalogRead(short channel) {
   // Sets AREF voltage to 5V.
   ADMUX |=  (1 << REFS0);
   // Enables ADC and sets prescaler to 128.
-  ADCSRA |= (1 << ADEN) | (1 <<ADPS2) | (1 <<ADPS1)  | (1 <<ADPS0);
+  ADCSRA |= (1 << ADEN) | (1 << ADPS2) | (1 << ADPS1)  | (1 << ADPS0);
 
   // Sets ADC channel.
   ADMUX |= channel & 0b1111;

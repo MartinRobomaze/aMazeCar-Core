@@ -9,7 +9,7 @@ float ProximitySensor::getDistance() {
   long sum = 0;
   for(int i=0;i < sensorNRead;i++)
   {
-    sum = sum + analogRead(sensorPin);
+    sum = sum + AnalogRead(sensorPin);
   }  
   float adc = sum / sensorNRead;
   //float volts = analogRead(adc)*0.0048828125;  // value from sensor * (5/1024)
