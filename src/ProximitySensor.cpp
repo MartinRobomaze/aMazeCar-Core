@@ -15,7 +15,7 @@ float ProximitySensor::getDistance() {
   //float volts = analogRead(adc)*0.0048828125;  // value from sensor * (5/1024)
   //float volts = sum*0.003222656;  // value from sensor * (3.3/1024) EXTERNAL analog refference
 
-  float distanceCm = 17569.7 * pow(adc, -1.2062);
+  float distanceCm = 27.728 * pow(map(adc, 0, 1023, 0, 5000) / 1000.0, -1.2045);
   //float distance_cm = 13*pow(volts, -1); 
-  return(distanceCm);
+  return distanceCm;
 }
