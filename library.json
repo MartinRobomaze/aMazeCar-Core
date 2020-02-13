@@ -1,0 +1,11 @@
+{
+    "name": "aMazeCar Core",
+    "version": "0.1",
+    "keywords": "car, motors,light sensors, line follower, maze solver, proximity sensors",
+    "description": "Library for handling sensors, motors and IO of a robotic car.",
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/MartinRobomaze/aMazeCar-Core.git"
+    }
+}
