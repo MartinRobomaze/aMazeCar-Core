@@ -41,3 +41,4 @@ void Motors::moveTank(int speedA, int speedB) {
     AnalogWrite(motorPins[2], speedB);
     AnalogWrite(motorPins[3], 0);
   }
+}
