@@ -1,3 +1,5 @@
+#ifndef IOHANDLE_H
+#define IOHANDLE_H
 #include <Arduino.h>
 #include <avr/io.h>
 
@@ -249,3 +251,5 @@ int AnalogRead(short channel) {
   // Returns measured value.
   return ADC;
 }
+
+#endif
